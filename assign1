@@ -1,0 +1,21 @@
+ASSIGNMENT1
+asdlfjl;asfjl
+
+te, COUNT(id) AS count FROM votes GROUP BY vote
+ERROR:  relation "votes" does not exist at character 38
+STATEMENT:  SELECT vote, COUNT(id) AS count FROM votes GROUP BY vote
+ERROR:  relation "votes" does not exist at character 38
+STATEMENT:  SELECT vote, COUNT(id) AS count FROM votes GROUP BY vote
+ERROR:  duplicate key value violates unique constraint "votes_id_key"
+DETAIL:  Key (id)=(287f357fbe67989) already exists.
+STATEMENT:  INSERT INTO votes (id, vote) VALUES ($1, $2)
+[root@ip-172-31-33-58 Worker]# kubectl get po
+NAME                      READY   STATUS    RESTARTS   AGE
+db-b54cd94f4-59vrh        1/1     Running   0          32m
+redis-868d64d78-mqmcn     1/1     Running   0          35m
+result-5d57b59f4b-9tt7d   1/1     Running   1          35m
+vote-94849dc97-69j86      1/1     Running   0          35m
+worker-dd46d7584-q4mzg    1/1     Running   1          34m
+[root@ip-172-31-33-58 Worker
+
+
